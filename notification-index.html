@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notification alarm</title>
+  <link rel="stylesheet" href="notification-style.css">
+</head>
+<body>
+    <main>
+      <div class="form-wrapper">
+        <h3>Create your alarm</h3>
+        <form class="form">
+          <label for="description">
+            <span>Description:</span>
+            <input type="text" name="description" id="description" required>
+          </label>
+          <label for="date">
+            <span>Date:</span>
+            <input type="date" name="date" id="date" required>
+          </label>
+          <div class="form__time">
+            <label for="hour">
+              <span>Hour:</span>
+              <input type="text" name="hour" id="hour" required>
+            </label>
+            <span class="separator">:</span>
+            <label for="minute">
+              <span>Minutes:</span>
+              <input type="text" name="minute" id="minute" required>
+            </label>
+          </div>
+          <button id="createAlarm">Create</button>
+        </form>
+      </div>
+      <div class="alarms">
+        <h3>Your alarms</h3>
+        <p>Actives:</p>
+        <div class="alarms__active">
+          <!-- <div class="alarm">
+            <span class="date">10/09/2020 14:30</span>
+            <span class="text">Sacar al perro</span>
+            <div class="buttons">
+              <button class="edit">Edit</button>
+              <button class="delete">Delete</button>
+            </div>
+          </div> -->
+        </div>
+        <p>Old:</p>
+        <div class="alarms__old">
+          <!-- <div class="alarm">
+            <span class="date">10/09/2019 14:30</span>
+            <span class="text">Sacar al perro</span>
+          </div> -->
+        </div>
+      </div>
+    </main>
+</body>
+<script src="notification-script.js"></script>
+</html>
